@@ -1,22 +1,16 @@
-import {
-  View,
-  Text,
-  ImageBackground,
-  ActivityIndicator,
-} from "react-native";
+import { View, Text, ImageBackground, ActivityIndicator } from "react-native";
 import React, { useEffect, useState } from "react";
 import CustomStatusBar from "@src/components/customStatusBar";
 import { colors } from "@src/theme";
 import { useFonts } from "expo-font";
 import Button from "@/src/components/button";
 import styles from "./styles";
-import NetInfo from '@react-native-community/netinfo';
+import NetInfo from "@react-native-community/netinfo";
 import Modal from "@/src/components/modal";
 
 const OnboardingScreen = ({ navigation }: any) => {
   const [isModalVisible, setModalVisible] = React.useState(false);
   const [isConnected, setIsConnected] = useState<any>(true);
-
 
   let [fontsLoaded] = useFonts({
     Katibeh: require("../../../assets/fonts/Katibeh-Regular.ttf"),
@@ -57,20 +51,20 @@ const OnboardingScreen = ({ navigation }: any) => {
               <View style={styles.middleSection}>
                 <Text style={styles.middleLogoText}>Reeple Finance</Text>
                 <Text style={styles.title}>
-                  Experience the future of investing with our cutting-edge AI
+                  Experience the Forex Exchange cutting-edge Technology
                   technology.
                 </Text>
                 <Text style={styles.description}>
-                  Our investment tactics, previously exclusive to hedge funds,
-                  are now available to you. You can make smart investment
-                  decisions in seconds, with no need for active management.
+                  The app provides an intuitive interface for selecting
+                  currencies and displays real-time conversion rates.
                 </Text>
               </View>
               <View style={styles.bottomSection}>
                 <Button
                   onPress={() => {
-                    isConnected ? navigation.replace("BottomTabNavigator") : navigation.replace("Network");
-                    
+                    isConnected
+                      ? navigation.replace("BottomTabNavigator")
+                      : navigation.replace("Network");
                   }}
                   backgroundColor={colors.primary.offset}
                   width={"100%"}
@@ -95,8 +89,7 @@ const OnboardingScreen = ({ navigation }: any) => {
             modalVisible={isModalVisible}
             displayQuestion="none"
             title="FortLink.AI investing offers several advantages, including:"
-            firstAnswer="Improved accuracy: Our AI analyzes vast amounts of data and
-             identify patterns that humans might miss, which can lead to more accurate investment decisions.
+            firstAnswer="The app provides an intuitive interface for selecting currencies and displays real-time conversion rates.
             "
           />
         </View>
