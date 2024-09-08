@@ -16,7 +16,7 @@ Reeple is a mobile application built using Expo and React Native that allows use
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/249d3693-68dc-4d3c-8017-7f10a43f65b6" alt="Splash Screen" width="150">
-  <img src="https://github.com/user-attachments/assets/5a2e481f-743f-42b9-b241-ffa2788a762f)" alt="Onboarding Screen" width="150">
+  <img src="https://github.com/user-attachments/assets/5a2e481f-743f-42b9-b241-ffa2788a762f" alt="Onboarding Screen" width="150">
   <img src="https://github.com/user-attachments/assets/dfa82520-c1b7-4cdf-9826-e2c0a6c85396" alt="Home Screen" width="150">
   <img src="https://github.com/user-attachments/assets/b1dc81c5-0fe8-4790-b17c-327843ba42cc" alt="Select Currency Screen" width="150">
   <img src="https://github.com/user-attachments/assets/dcfa9cc2-5ce1-4eee-95f4-592661287284" alt="No Network Screen" width="150">
@@ -38,7 +38,7 @@ To run this project locally, follow these steps:
 
 ```bash
 git clone https://github.com/arinze96/reeple-assessment-arinze-edmund.git
-cd reeple
+cd reeple-assessment-arinze-edmund
 
 ```
 
