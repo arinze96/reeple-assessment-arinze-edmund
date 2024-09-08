@@ -1,7 +1,7 @@
 export type ButtonProps = {
     onPress: () => void;
-    width: string;
-    height: number;
+    width: any;
+    height: any;
     backgroundColor: any;
     titleColor: any;
     title: string;

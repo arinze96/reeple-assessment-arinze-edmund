@@ -10,6 +10,7 @@ type CustomNavbarProps = {
   nav_icons?: React.ReactNode;
 };
 
+// CustomNavbar is a custom component for screen navigation and navigation icons
 const CustomNavbar: React.FC<CustomNavbarProps> = ({
   goBack,
   back_icon,

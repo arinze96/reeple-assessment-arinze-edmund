@@ -12,11 +12,14 @@ Reeple is a mobile application built using Expo and React Native that allows use
 ## Screenshot 
 
 
-![splashscreen](https://github.com/user-attachments/assets/249d3693-68dc-4d3c-8017-7f10a43f65b6)
-![onBoardingScreen](https://github.com/user-attachments/assets/bbbf2c86-6c42-4bde-9b48-d486f80b5c61)
-![HomeScreen](https://github.com/user-attachments/assets/dfa82520-c1b7-4cdf-9826-e2c0a6c85396)
-![SelectCurrencyScreen](https://github.com/user-attachments/assets/b1dc81c5-0fe8-4790-b17c-327843ba42cc)
-![noNetworkScreen](https://github.com/user-attachments/assets/dcfa9cc2-5ce1-4eee-95f4-592661287284)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/249d3693-68dc-4d3c-8017-7f10a43f65b6" alt="Splash Screen" width="150">
+  <img src="https://github.com/user-attachments/assets/bbbf2c86-6c42-4bde-9b48-d486f80b5c61" alt="Onboarding Screen" width="150">
+  <img src="https://github.com/user-attachments/assets/dfa82520-c1b7-4cdf-9826-e2c0a6c85396" alt="Home Screen" width="150">
+  <img src="https://github.com/user-attachments/assets/b1dc81c5-0fe8-4790-b17c-327843ba42cc" alt="Select Currency Screen" width="150">
+  <img src="https://github.com/user-attachments/assets/dcfa9cc2-5ce1-4eee-95f4-592661287284" alt="No Network Screen" width="150">
+</p>
 
 
 
@@ -70,6 +73,23 @@ Technologies Used
 4. TypeScript: For static type checking.
 5. NetInfo: For detecting network status and handling offline scenarios. 
 6. React Query for API Calls
+
+This project is structure in such a way that api calls are done used react-query and data is returned and saved in a state which are used 
+to calculate the exchange rate
+
+every essential part of the project frontend lives in the src folder
+
+which houses::-->>
+component folder::-->> this holds all the custom components that is reused in the project
+constants folder::-->> this holds all the constant data that is reused does not change for the entirerity of the project
+mock folder ::-->> this holds all the mock data that is used in place of data that is meant to come from an api endpoint
+navigation ::-->> this is thesection where all the navigation codes of react navigation library is written which controls how you move around the app
+screens ::-->> this folder contains all the frontend screens and implentation of business login of the app
+store ::--> this contains the redux store and all the reducers and every other technology for persisting data
+theme ::--> contains styles parameters such as colors, shadows etc
+types ::-->> this is a folder for setting typescript types 
+utils ::->> this holds vital custom functions used for varius
+
 
 
 

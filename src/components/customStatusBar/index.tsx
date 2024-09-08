@@ -15,6 +15,7 @@ import {
     barStyle: any;
   };
   
+
   const CustomStatusBar: React.FC<StatusBarProps> = ({
     backgroundColor,
     barStyle,

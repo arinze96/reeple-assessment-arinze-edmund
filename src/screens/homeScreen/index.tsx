@@ -30,15 +30,18 @@ import NetInfo from '@react-native-community/netinfo';
 
 
 const HomeScreen = () => {
-  const [baseAmount, setBaseAmount] = useState<any>("");
-  const [convertAmount, setConvertAmount] = useState<any>("");
-  const [fontSize, setFontSize] = useState<any>(30);
-  const [displayBaseModal, setDisplayBaseModal] = useState(false);
-  const [displayConvertModal, setDisplayConvertModal] = useState(false);
-  const [isConnected, setIsConnected] = useState<any>(true);
-  const [baseCurrency, setBaseCurrency] = useState(BASE_CURRENCY);
-  const [convertCurrency, setConvertCurrency] = useState(TARGET_CURRENCY);
+  const [baseAmount, setBaseAmount] = useState<any>(""); // this is the base currency amount
+  const [convertAmount, setConvertAmount] = useState<any>(""); //this is the target currency amount
+  const [fontSize, setFontSize] = useState<any>(30); //this state hold fontSize for adjustment of textInput text
+  const [displayBaseModal, setDisplayBaseModal] = useState(false); //holds modal state for base currency modal
+  const [displayConvertModal, setDisplayConvertModal] = useState(false); //hold modal state for convert currency modal
+  const [isConnected, setIsConnected] = useState<any>(true); //this state holds the state of the internet connection
+  const [baseCurrency, setBaseCurrency] = useState(BASE_CURRENCY); //this state holds the base default currency local data
+  const [convertCurrency, setConvertCurrency] = useState(TARGET_CURRENCY); //this state holds the convert defsult currency local data
 
+
+  // this function is used to grab and set base
+  // currency and conver currency state data 
   const setCurrencyData = (item: any, type: "base" | "convert") => {
     if (type === "base") {
       setBaseCurrency(item);
@@ -49,6 +52,8 @@ const HomeScreen = () => {
     }
   };
 
+  // this is an react query api request method for
+  // fetching the exchange rate between two currencies
   const {
     data: pairRate,
     isLoading,
@@ -57,6 +62,11 @@ const HomeScreen = () => {
     base: `${baseCurrency.abbreviation}`,
     convert: `${convertCurrency.abbreviation}`,
   });
+
+
+  // the data fetched from the RTK query of the exchange rate method
+  //above is processed inside this useEffect to become a number
+  //and its also formatted properly
 
   useEffect(() => {
     refetchPairRate();
@@ -80,6 +90,8 @@ const HomeScreen = () => {
     }
   }, [baseCurrency, convertCurrency]);
 
+
+  // internet connect is checked here for its availability 
   useEffect(() => {
 
     const unsubscribe = NetInfo.addEventListener((state) => {
@@ -167,11 +179,6 @@ const HomeScreen = () => {
                   style={{ ...styles.textInput, fontSize: fontSize }}
                   onChangeText={(item) => {
                     setBaseAmount(item ? parseFloat(item) : 0);
-                    // if (item?.length > 3) {
-                    //   setFontSize(16);
-                    // } else {
-                    //   setFontSize(30);
-                    // }
                   }}
                   maxLength={12} // Restricts the input to 12 characters
                   keyboardType="numeric"
@@ -242,11 +249,6 @@ const HomeScreen = () => {
                   style={{ ...styles.textInput, fontSize: fontSize }}
                   onChangeText={(item) => {
                     setConvertAmount(item ? parseFloat(item) : 0);
-                    // if (item?.length > 3) {
-                    //   setFontSize(16);
-                    // } else {
-                    //   setFontSize(30);
-                    // }
                   }}
                   keyboardType="numeric"
                 />
