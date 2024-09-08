@@ -75,21 +75,39 @@ Technologies Used
 5. NetInfo: For detecting network status and handling offline scenarios. 
 6. React Query for API Calls
 
+
+
+## Folder Structure
 This project is structure in such a way that api calls are done used react-query and data is returned and saved in a state which are used 
 to calculate the exchange rate
-
 every essential part of the project frontend lives in the src folder
 
-which houses::-->>
-component folder::-->> this holds all the custom components that is reused in the project
-constants folder::-->> this holds all the constant data that is reused does not change for the entirerity of the project
-mock folder ::-->> this holds all the mock data that is used in place of data that is meant to come from an api endpoint
-navigation ::-->> this is thesection where all the navigation codes of react navigation library is written which controls how you move around the app
-screens ::-->> this folder contains all the frontend screens and implentation of business login of the app
-store ::--> this contains the redux store and all the reducers and every other technology for persisting data
-theme ::--> contains styles parameters such as colors, shadows etc
-types ::-->> this is a folder for setting typescript types 
-utils ::->> this holds vital custom functions used for varius
+- **component folder**  
+  This holds all the custom components that are reused in the project.
+
+- **constants folder**  
+  This holds all the constant data that is reused and does not change for the entirety of the project.
+
+- **mock folder**  
+  This holds all the mock data used in place of data meant to come from an API endpoint.
+
+- **navigation**  
+  This section contains all the navigation code from the React Navigation library, which controls how you move around the app.
+
+- **screens**  
+  This folder contains all the frontend screens and the implementation of business logic for the app.
+
+- **store**  
+  This contains the Redux store, all the reducers, and other technologies for persisting data.
+
+- **theme**  
+  This folder contains style parameters such as colors, shadows, etc.
+
+- **types**  
+  This folder is used for setting TypeScript types.
+
+- **utils**  
+  This holds vital custom functions used for various tasks.
 
 
 
