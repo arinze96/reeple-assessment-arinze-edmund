@@ -12,11 +12,11 @@ Reeple is a mobile application built using Expo and React Native that allows use
 ## Screenshot 
 
 
-![WhatsApp Image 2024-09-08 at 11 55 05](https://github.com/user-attachments/assets/249d3693-68dc-4d3c-8017-7f10a43f65b6)
-![WhatsApp Image 2024-09-08 at 11 55 04 (1)](https://github.com/user-attachments/assets/bbbf2c86-6c42-4bde-9b48-d486f80b5c61)
-![WhatsApp Image 2024-09-08 at 11 55 06](https://github.com/user-attachments/assets/dfa82520-c1b7-4cdf-9826-e2c0a6c85396)
-![WhatsApp Image 2024-09-08 at 11 55 05 (1)](https://github.com/user-attachments/assets/b1dc81c5-0fe8-4790-b17c-327843ba42cc)
-![WhatsApp Image 2024-09-08 at 11 55 04](https://github.com/user-attachments/assets/dcfa9cc2-5ce1-4eee-95f4-592661287284)
+![splashscreen](https://github.com/user-attachments/assets/249d3693-68dc-4d3c-8017-7f10a43f65b6)
+![onBoardingScreen](https://github.com/user-attachments/assets/bbbf2c86-6c42-4bde-9b48-d486f80b5c61)
+![HomeScreen](https://github.com/user-attachments/assets/dfa82520-c1b7-4cdf-9826-e2c0a6c85396)
+![SelectCurrencyScreen](https://github.com/user-attachments/assets/b1dc81c5-0fe8-4790-b17c-327843ba42cc)
+![noNetworkScreen](https://github.com/user-attachments/assets/dcfa9cc2-5ce1-4eee-95f4-592661287284)
 
 
 
@@ -28,18 +28,17 @@ To run this project locally, follow these steps:
 
 ### Prerequisites
 
-- Node.js (v12 or later)
-- Expo CLI (v4.0.0 or later)
+- Expo CLI (v51.0.28)
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/arinzeEdmund/reeple-assessment-arinze-edmund.git
-cd reeple-assessment-arinze-edmund
+git clone https://github.com/arinze96/reeple-assessment-arinze-edmund.git
+cd reeple
 
 ```
 
-### Clone the Repository
+### Intall Dependency
 
 ```bash
 npm install
