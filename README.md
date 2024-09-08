@@ -73,18 +73,6 @@ Technologies Used
 
 ### Folder Structure
 
-bash
-Copy code
-.
-├── assets          # App images and icons
-├── components      # Reusable UI components
-├── constants       # App-wide constants (e.g., colors, dimensions)
-├── screens         # App screens (Home, Settings, etc.)
-├── store           # Redux store and slices
-├── theme           # App styling and theme settings
-└── utils           # Utility functions (e.g., API calls, helpers)
-
-
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 Contact
