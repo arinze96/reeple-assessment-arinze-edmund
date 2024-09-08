@@ -61,7 +61,7 @@ expo start
 
 ### API
 
-Reeple uses a currency exchange rate API to fetch the latest rates. You may need to configure the API endpoint and key in the application for production use.
+Reeple uses a currency exchange rate API to fetch the latest rates. 
 Technologies Used
 
 1. React Native: A framework for building native apps using React.
@@ -69,6 +69,7 @@ Technologies Used
 3. Redux Toolkit: For state management.
 4. TypeScript: For static type checking.
 5. NetInfo: For detecting network status and handling offline scenarios. 
+6. React Query for API Calls
 
 
 
@@ -79,7 +80,7 @@ Contact
 For any inquiries, you can reach me at:
 Email: edmund10arinze@gmail.com
 GitHub: arinzeEdmund
-Portfolio: arinzeedmund.online
+Portfolio: arinzeedmund.online/mobile.html
 
 
 
