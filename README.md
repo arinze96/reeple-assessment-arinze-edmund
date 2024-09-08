@@ -1,3 +1,4 @@
+
 # Reeple - Currency Exchange Rate Viewer
 
 Reeple is a mobile application built using Expo and React Native that allows users to view the current exchange rate between two currencies. The app provides an intuitive interface for selecting currencies and displays real-time conversion rates.
@@ -101,9 +102,3 @@ For any inquiries, you can reach me at:
 Email: edmund10arinze@gmail.com
 GitHub: arinzeEdmund
 Portfolio: arinzeedmund.online/mobile.html
-
-
-
-
-
-
