@@ -20,7 +20,7 @@ Reeple is a mobile application built using Expo and React Native that allows use
 
 
 
-_(Include screenshots of your app's UI here)_
+_(App UI screenshots)_
 
 ## Installation
 
