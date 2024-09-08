@@ -94,6 +94,8 @@ const styles = StyleSheet.create({
     width: "40%",
     height: "100%",
     backgroundColor: colors.gray[100],
+    borderTopLeftRadius:10,
+    borderBottomLeftRadius:10,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",

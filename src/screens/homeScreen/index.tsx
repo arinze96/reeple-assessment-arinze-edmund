@@ -246,7 +246,7 @@ const HomeScreen = () => {
                 <TextInput
                   placeholder="0.00"
                   value={convertAmount}
-                  style={{ ...styles.textInput, fontSize: fontSize }}
+                  style={{ ...styles.textInput, color: colors.primary[1000] }}
                   onChangeText={(item) => {
                     setConvertAmount(item ? parseFloat(item) : 0);
                   }}

@@ -70,7 +70,7 @@ const BottomTabNavigator = () => {
 
       <Tab.Screen
         name="Exchange"
-        component={Network}
+        component={CommingSoon}
         options={{
           tabBarIcon: ({ focused }: any) => (
             <FontAwesome5
