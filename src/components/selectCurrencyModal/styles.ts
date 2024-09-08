@@ -89,9 +89,9 @@ const styles = StyleSheet.create({
 
   seperator: { fontSize: 20, color: "gray", marginHorizontal: 10 },
 
-  currency: { fontSize: 20, color: "gray" },
+  currency: { fontSize: 16, color: "gray" },
 
-  currencyFullName: { fontSize: 16, color: colors.gray[1000], marginLeft: 10 },
+  currencyFullName: { fontSize: 14, color: colors.gray[1000], marginLeft: 10 },
 });
 
 export default styles;
