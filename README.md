@@ -71,7 +71,7 @@ Technologies Used
 4. TypeScript: For static type checking.
 5. NetInfo: For detecting network status and handling offline scenarios. 
 
-### Folder Structure
+
 
 
 This project is licensed under the MIT License - see the LICENSE file for details.
